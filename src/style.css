@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'MyFont';
+    /* src: url('./lemon.ttf') format('ttf'); */
+    /* src: url('./RichEatin.otf') format('otf'); */
+    src:url('./RichEatin.otf');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+body{
+    background-image: url("./waffles.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:100vw 100vh;
+    margin:0;
+    padding:0;
+}
+
+.pageLayout{
+    display:grid;
+    grid-template-rows: 8vh 16vh 8fr 1fr; /*4 rows: banner space, header, content, and credit. Note preivously 2fr */
+    gap:2px ;
+    align-items:center;
+    padding-left:0px;
+}
+
+/*banner is positioned as absolute; no row is needed in grid*/
+.banner{
+    background-color:rgba(74,36,105,0.9);
+    margin-top:0;
+    padding:0px;
+    margin:0px;
+    display:grid;
+    grid-template-columns:5fr 1fr 1fr 1fr;
+    justify-items:center;
+    align-content:center;
+    position:fixed;
+    top:0;
+    width:100vw;
+    height:4vh;
+}
+
+.bannerLink{
+    color:white;
+    text-justify:center;
+    font-weight:bold;
+    text-decoration:none;
+    border:none;
+    background-color:rgba(0,0,0,0);
+}
+
+.bannerLink:hover{
+    cursor:pointer;
+    color:blueviolet;
+}
+
+/* .headerBlock{ */
+#headerBlock{
+    padding:0;
+    height:auto;
+    justify-items:flex-start;
+}
+
+/* .heading{ */
+#heading{
+    font-size:8vh;
+    color:white;
+    text-align:center;
+    background-color:rgba(2, 36, 105, 0.66);
+    padding-left:0px;
+    padding:0;
+    padding-top:4vh;
+    margin:0;
+    font-family: 'MyFont';
+}
+
+/* .tagline{ */
+#tagline{
+    color: white;
+    text-align:center; 
+    padding:10px;
+    font-size:3vh;
+    background-color:rgba(2, 36, 105, 0.66);
+}
+
+/* .smallHeading{ */
+#smallHeading{
+    color:white;
+    background-color:rgba(2, 36, 105, 0.66);
+    font-size:6vh;
+    text-align:center;
+    align-self:flex-start;
+    font-family:"MyFont";
+    margin-top:0;
+}
+
+/* .contentBlock{ */
+ #contentBlock{
+    display:grid;
+    gap:5vh;
+    padding:20px;
+    padding-top:40px;
+    align-items:flex-start;
+    justify-content:center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+}
+
+.credit{
+    font-size:auto;
+    color:white;
+    position:fixed;
+    bottom:0;
+}
+
+.reviewCard{
+    width:40vw;
+    flex-wrap: wrap;
+    background-color:rgba(74,36,105,0.66);
+    border-radius:10px;
+    border:indigo solid 2px;
+    padding:10px;
+    color:white;
+    justify-self:center;
+    height:30vh;
+    display:grid;
+    grid-template-rows: 5fr 1fr;
+}
+
+.review{
+    font-size:5vh;
+    font-style:italic;
+    justify-self:flex-start;
+}
+
+.reviewCredit{
+    font-size:4vh;
+    justify-self:flex-end;
+}
+
+.menuBlock{
+    background-color:rgba(74,36,105,0.8);
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    width:70vw;
+    justify-items:center;
+    align-items:center;
+    text-align:center;
+    justify-self:center;
+    gap:30px;
+    padding-top:30px;
+    padding-bottom:30px;
+    border-radius:20px;
+}
+
+.mealCard{
+    background-color:lightblue;
+    display:grid;
+    grid-template-rows: 4fr 1fr;
+}
+
+.foodPhoto{
+    width:10vw;
+    height:10vw;
+    gap:5px;
+    border:8px solid rgba(255,255,255,0.7);
+    border-radius:20px;
+}
+
+.foodTitle{
+    color:white;
+    font-size:3vh;
+}
+
+.foodCredit{
+    color:white;
+    font-size:2vh;
+}
+
+.contactBlock{
+    background-color:rgba(2, 36, 105, 0.8);
+    border-radius:10px;
+    border: 2px navy solid;
+    display:grid;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    gap:2px;
+    height:40vh;
+    width:40vw;
+    justify-self:center;
+    justify-items:center;
+}
+
+.contactTitle{
+    font-size: 5vh;
+    color:white;
+}
+
+.contactName{
+    font-size:4vh;
+    color:white;
+}
+
+.contactPhoto{
+    background-color:white;
+    border:solid 2px black;
+    height:20vh;
+    width:20vh;
+}
+
+.contactNumber{
+    font-size:3vh;
+    font-style:italic;
+    color:white;
+}
